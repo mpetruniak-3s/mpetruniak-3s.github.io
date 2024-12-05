@@ -24,6 +24,6 @@ test('Start Form', async ({ page }) => {
     await ai('Enter "Blue" in the "Preferred Color Scheme:" field', aiArgs)
     await ai('Click the "Next" button', aiArgs)
     await ai('Click checkbox for "Living Room"', aiArgs)
-    await ai('Click the "Submit" button', aiArgs)
+    await ai('Click "Submit" button', aiArgs)
     await ai('Expect to see the "Form submitted! We will get in touch with you soon" message', aiArgs)
 });
