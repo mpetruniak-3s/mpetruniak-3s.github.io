@@ -1,15 +1,17 @@
 {
-    "name": "hackathon",
-    "version": "1.0.0",
-    "description": "A project to run Playwright tests.",
-    "main": "index.js",
-    "directories": {
-        "test": "tests"
-    },
-    "devDependencies": {
-        "@playwright/test": "^1.39.0",
-        "@zerostep/playwright": "^0.1.5"
-    },
-    "author": "",
-    "license": "MIT"
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "A project to run Playwright tests.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1",
+    "@zerostep/playwright": "^0.1.5"
+  },
+  "author": "",
+  "license": "MIT",
+  "scripts": {}
 }
