@@ -37,6 +37,12 @@ jobs:
     needs: playwright-tests 
 
     steps:
+    - name: Checkout the main branch
+      run: |
+        git fetch origin main
+        git checkout main
+        git reset --hard origin/main
+        
     - name: Deploy to GitHub Pages
       if: success() 
       uses: JamesIves/github-pages-deploy-action@v4
