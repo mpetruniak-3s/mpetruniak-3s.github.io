@@ -3,7 +3,7 @@ name: Playwright Tests with Rollback
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   playwright-tests:
