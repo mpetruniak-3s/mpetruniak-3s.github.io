@@ -41,7 +41,9 @@ jobs:
       if: success() 
       uses: JamesIves/github-pages-deploy-action@v4
       with:
+        branch: main
         folder: .  
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Handle Playwright test failure
       if: failure() 
