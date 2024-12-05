@@ -49,6 +49,10 @@ jobs:
         branch: main
         folder: .  
         token: ${{ secrets.GITHUB_TOKEN }}
+      on:
+        push:
+          branches:
+            - main
 
     - name: Handle Playwright test failure
       if: failure() 
