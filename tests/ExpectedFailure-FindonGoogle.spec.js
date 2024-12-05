@@ -11,5 +11,5 @@ test('Hackathon', async ({ page }) => {
   await ai(`Type "${headerText}" in the search box`, aiArgs)
   await ai('Press enter', aiArgs)
   await ai('Expect to see results', aiArgs)
-  await ai('Do not expect to see a link to the site', aiArgs)
+  await ai('Expect to see a link to the site', aiArgs)
 });
