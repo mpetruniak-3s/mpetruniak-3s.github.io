@@ -19,5 +19,5 @@ function setAnswer(value, step) {
 document.getElementById("consultationForm").addEventListener("submit", function(e) {
     e.preventDefault();
     console.log("Form Submitted with answers:", answers);
-    alert("Form submitted! We'll get in touch with you soon.");
+    alert("Form submitted! We will get in touch with you soon.");
 });

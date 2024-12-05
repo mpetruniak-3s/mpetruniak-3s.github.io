@@ -57,7 +57,6 @@
                 <label>Are you a home owner?</label>
                 <button type="button" onclick="setAnswer('yes', 6)">Yes</button>
                 <button type="button" onclick="setAnswer('no', 6)">No</button>
-                <button type="button" class="next-btn" onclick="nextStep(6)">Next</button>
             </div>
             <!-- Step 7 -->
             <div class="form-step" id="step7" style="display:none;">
@@ -66,7 +65,6 @@
                 <button type="button" onclick="setAnswer('1250-1500', 7)">1250 - 1500</button>
                 <button type="button" onclick="setAnswer('1600-2000', 7)">1600 - 2000</button>
                 <button type="button" onclick="setAnswer('2500+', 7)">2500+</button>
-                <button type="button" class="next-btn" onclick="nextStep(7)">Next</button>
             </div>
             <!-- Step 8 -->
             <div class="form-step" id="step8" style="display:none;">
@@ -75,13 +73,6 @@
                 <button type="button" onclick="setAnswer('2-3', 8)">2-3</button>
                 <button type="button" onclick="setAnswer('3-4', 8)">3-4</button>
                 <button type="button" onclick="setAnswer('4-5', 8)">4-5</button>
-
-                <label for="stories">How many stories?</label>
-                <button type="button" onclick="setAnswer('1', 8)">1</button>
-                <button type="button" onclick="setAnswer('2', 8)">2</button>
-                <button type="button" onclick="setAnswer('3', 8)">3</button>
-                <button type="button" onclick="setAnswer('4', 8)">4</button>
-                <button type="button" class="next-btn" onclick="nextStep(8)">Next</button>
             </div>
             <!-- Step 9 -->
             <div class="form-step" id="step9" style="display:none;">
@@ -90,9 +81,29 @@
                 <button type="button" class="next-btn" onclick="nextStep(9)">Next</button>
             </div>
             <!-- Step 10 -->
-            <div class="form-step" id="step10" style="display:none;">
+            <div class="form-step" id="step10" style="display:none;"> 
                 <label for="roomsToAdvise">Rooms Needing Advice:</label>
-                <input type="text" id="roomsToAdvise" name="roomsToAdvise" required>
+            
+                <div>
+                    <input type="checkbox" id="allRooms" name="rooms" value="All rooms">
+                    <label for="allRooms">1-2</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="livingRoom" name="rooms" value="Living Room">
+                    <label for="livingRoom">2-3</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="kitchen" name="rooms" value="Kitchen">
+                    <label for="kitchen">3-4</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="bedroom" name="rooms" value="Bedroom">
+                    <label for="bedroom">4-5</label>
+                </div>
+            
                 <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
