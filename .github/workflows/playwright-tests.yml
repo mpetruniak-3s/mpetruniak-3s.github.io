@@ -43,10 +43,6 @@ jobs:
         fetch-depth: 0
 
     - name: Deploy to GitHub Pages
-      on:
-        push:
-          branches:
-            - main
       if: success() 
       uses: JamesIves/github-pages-deploy-action@v4
       with:
