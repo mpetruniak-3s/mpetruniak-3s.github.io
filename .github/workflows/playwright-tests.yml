@@ -42,7 +42,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: main
-        folder: build  
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Handle Playwright test failure
