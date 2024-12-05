@@ -10,4 +10,5 @@ test('Hackathon', async ({ page }) => {
   await page.goto('https://google.com/')
   await ai(`Type "${headerText}" in the search box`, aiArgs)
   await ai('Press enter', aiArgs)
+  await ai('Expect to see results', aiArgs)
 });
