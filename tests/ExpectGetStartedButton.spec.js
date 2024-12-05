@@ -6,5 +6,5 @@ test('Verify that Get Started Now is the button label - this test should fail', 
 
     // An object with page and test must be passed into every call
     const aiArgs = { page, test }
-    await ai('Expect to see the "Get Started Now" button', aiArgs)
+    await ai('Expect to see nothing', aiArgs)
 });
