@@ -43,16 +43,16 @@ jobs:
         fetch-depth: 0
 
     - name: Deploy to GitHub Pages
+      on:
+        push:
+          branches:
+            - main
       if: success() 
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: main
         folder: .  
         token: ${{ secrets.GITHUB_TOKEN }}
-      on:
-        push:
-          branches:
-            - main
 
     - name: Handle Playwright test failure
       if: failure() 
